@@ -7,12 +7,14 @@ import java.util.*;
 // Создаем главный класс с модификатором доступа public.
 // В котором объявим переменные. Что есть атрибуты класса
 public class fr {
-
 // Создаем метод (который ничего не возвращает). В данном методе инициализируем услувие проверки двух переменных
 // введеных с клавиатуры. Для этого нам надо передать аргументы в метод
-        void fr(int a, int b){
+        void fr(int a, int b, int c){
 //Собственно само условие. Если истина, то SOPом выводим сообщение об истенности
             if (a>b){
+                 if (a>c){
+                     System.out.println(Math.sqrt(a));
+                 }
                 System.out.println("Ye! it's variable larger");
             }
 // Если ложь, то аналогично выводим SOPом сообщение о ложности условия
@@ -29,7 +31,9 @@ public class fr {
         int k = in.nextInt();
         System.out.println("Enter b");
         int l = in.nextInt();
+        System.out.println("Enter c");
+        int d = in.nextInt();
 // Вызываем метод проверки условия с аргументами полученными из консоли
-        f.fr(k,l);
+        f.fr(k,l,d);
         }
 }
